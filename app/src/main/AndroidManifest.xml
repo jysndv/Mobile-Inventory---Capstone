@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.simplisticshop.mainactivity"
+    android:versionCode="10"
+    android:versionName="10.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/inventory"
+        android:label="Simplistic Shop Inventory"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MainActivity">
+        <activity android:name=".AdminInventoryActivity"></activity>
+        <activity android:name=".QuantityInRecords" />
+        <activity android:name=".LogoutRecordsActivity" />
+        <activity android:name=".LoginRecordsActivity" />
+        <activity android:name=".RecordsActivity" />
+        <activity android:name=".UpdateUserActivity" />
+        <activity android:name=".AdminDashboardActivity" />
+        <activity android:name=".AdminLoginActivity" />
+        <activity android:name=".ViewUser" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OtpVerifyActivity" />
+        <activity android:name=".OtpSendActivity" />
+        <activity android:name=".UpdateInformation" />
+        <activity android:name=".ProductUpdateActivity" />
+        <activity android:name=".ScanDeleteItems" />
+        <activity android:name=".DeleteProductActivity" />
+        <activity android:name=".ScanItemsActivity" />
+        <activity android:name=".InventoryActivity" />
+        <activity android:name=".ScannerActivity" />
+        <activity android:name=".AddProductActivity" />
+        <activity android:name=".ForgotPassActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/action_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#123962"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/view_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+
+            android:textSize="12sp"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:text="User Name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="90dp"
+            android:textColor="@color/white"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:text=":" />
+
+
+        <TextView
+            android:id="@+id/viewuser_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:textColor="#ffff"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:layout_toEndOf="@+id/view_user_name"
+            android:text="TextView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="90dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/view_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+
+            android:layout_marginTop="20dp"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:text="User Email" />
+
+
+        <TextView
+            android:id="@+id/viewuser_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/viewuser_name"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            android:textColor="#ffff"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/datecreated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Created"
+            android:layout_marginTop="40dp"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+
+            android:textSize="12sp"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginStart="90dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/viewdatecreated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/viewuser_email"
+            android:layout_marginStart="0dp"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            android:textColor="#ffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/timecreated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Created"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="60dp"
+            android:textSize="12sp"
+
+            android:textColor="#ffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="90dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/viewtimecreated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:layout_alignStart="@+id/viewdatecreated"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="60dp"
+            android:text="TextView"
+            android:textColor="#ffff"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

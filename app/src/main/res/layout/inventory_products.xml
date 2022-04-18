@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/action_container"
+        android:layout_width="match_parent"
+        android:layout_height="388dp"
+        android:background="#123962"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop" />
+
+
+        <TextView
+            android:id="@+id/viewitembarcodename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:text="Item Barcode"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#ffff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:text=":"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewitembarcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_toEndOf="@+id/viewitembarcodename"
+            android:text="TextView"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#ffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/viewitemnamename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitembarcodename"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="40"
+            android:text="Item Name"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#ffff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dot1"
+            android:layout_alignStart="@+id/dot1"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="7dp"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:text=":"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewitemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitembarcode"
+            android:layout_alignStart="@+id/viewitembarcode"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="2dp"
+            android:text="TextView"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#ffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/viewitemquantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitemcategoryname"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:text="Item Quantity"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#ffff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dot4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dot3"
+            android:layout_alignStart="@+id/dot3"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:text=":"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewitemquantityleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitemcategory"
+            android:layout_alignStart="@+id/viewitemcategory"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="40"
+            android:text="TextView"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#ffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/viewitemcategoryname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitemnamename"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:text="Item Category"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#ffff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dot2"
+            android:layout_alignStart="@+id/dot2"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="11dp"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:text=":"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewitemcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitemname"
+            android:layout_alignStart="@+id/viewitemname"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="11dp"
+            android:text="TextView"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#ffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/itemprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitemquantity"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:text="Item Price"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#ffff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dot5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dot4"
+            android:layout_alignStart="@+id/dot4"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:text=":"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewitemprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewitemquantityleft"
+            android:layout_alignStart="@+id/viewitemquantityleft"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#ffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/dateadded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Date"
+            android:textColor="#ffff"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/viewdateadded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="91dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_toEndOf="@+id/dateadded"
+            android:text="TextView"
+            android:textColor="#ffff"
+            android:textSize="13sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/timeadded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="Time"
+            android:textColor="#ffff"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/viewtimeadded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="120dp"
+            android:layout_toEndOf="@+id/timeadded"
+            android:text="TextView"
+            android:textColor="#ffff"
+            android:textSize="13sp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

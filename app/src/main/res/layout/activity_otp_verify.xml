@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/bg_gradient"
+    tools:context=".OtpVerifyActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Verify OTP"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Enter your received OTP here"
+        android:textSize="16sp"
+        android:textColor="#777777"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="+639123456789"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etC1"
+        android:layout_width="38dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/addproduct_text_bg"
+        android:backgroundTint="@color/white"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonenumber"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etC2"
+        android:layout_width="38dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/addproduct_text_bg"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/etC1"
+        app:layout_constraintStart_toEndOf="@+id/etC1"
+        app:layout_constraintTop_toTopOf="@+id/etC1"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etC3"
+        android:layout_width="38dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/addproduct_text_bg"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/etC2"
+        app:layout_constraintStart_toEndOf="@+id/etC2"
+        app:layout_constraintTop_toTopOf="@+id/etC2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etC4"
+        android:layout_width="38dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/addproduct_text_bg"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/etC3"
+        app:layout_constraintStart_toEndOf="@+id/etC3"
+        app:layout_constraintTop_toTopOf="@+id/etC3"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etC5"
+        android:layout_width="38dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/addproduct_text_bg"
+        android:inputType="number"
+        android:backgroundTint="@color/white"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etC4"
+        app:layout_constraintStart_toEndOf="@+id/etC4"
+        app:layout_constraintTop_toTopOf="@+id/etC4"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etC6"
+        android:layout_width="38dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/addproduct_text_bg"
+        android:backgroundTint="@color/white"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvResendBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/etC5"
+        app:layout_constraintTop_toBottomOf="@+id/phonenumber"
+        app:layout_constraintVertical_bias="0.51"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="24dp"
+        android:text="Didn't get the OTP?"
+        android:textSize="14sp"
+        android:textColor="#777777"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etC3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvResendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="96dp"
+        android:text="Resend OTP"
+        android:textColor="#123962"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/etC4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_verify_otp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#123962"
+        android:letterSpacing=".1"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints" />
+
+    <ProgressBar
+        android:id="@+id/otp_progressbar_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
